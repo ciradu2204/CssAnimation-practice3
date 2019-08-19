@@ -1,0 +1,54 @@
+body,html{
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tab{
+    border: 1px solid black; 
+    background-color: white;
+    width: 600px;
+    height: 300px;
+
+}
+
+.details{
+    border: 1px solid black;
+    margin: 40px;
+    margin-top: -40px;
+    transition: all 1s ease;
+    text-align: center;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 200px;
+}
+
+h1{
+    transform: rotate(90deg) scale(0.7)
+    translate(10px, -25px);
+    transform-origin: center left;
+    transition: all 0.5s ease;
+ 
+
+}
+
+@media all and (min-width:600px){
+
+    h1{
+        transform: initial;
+    }
+
+    .details{
+        margin-top:0;
+    }
+
+     .tab{
+         height: 400px;
+     }
+}
